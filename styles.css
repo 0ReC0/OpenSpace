@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.space {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /*background-color: bisque;*/
+    background-image: url("assets/space.png");
+}
+
+.planet-area {
+    width: 60%;
+    height: 80%;
+    bottom: 0;
+    left: 0;
+    /*position: absolute;*/
+    /*background-color: antiquewhite;*/
+}
+
+.planet {
+    position: absolute;
+    /*background-color: #66cc66;*/
+    width: 80%;
+    /*height: 60%;*/
+    bottom: 0;
+    left: 0;
+}
+.rocket {
+    position: absolute;
+    /*background-color: coral;*/
+    width: 20%;
+    /*height: 20%;*/
+    bottom: 45vmin;
+    left: 30%;
+    transform: rotate(30deg);
+}
+
+.control-panel {
+    background:
+            linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+            linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+            linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+            linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+            linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+            linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    /*background-repeat: round;*/
+    padding: 1%;
+    position: absolute;
+    left: 60%;
+    bottom: 20%;
+    margin-right: 5%;
+}
+
+.control-panel__inner {
+    background-color: #252525;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.password {
+    display: flex;
+}
+.password-input {
+    width: 10em;
+    margin-right: .3em;
+}
+
+/*.password-input > input {*/
+/*    width: 100%;*/
+/*    background: #252525;*/
+/*    border-color: #03041c;*/
+/*    border-radius: .5em;*/
+/*}*/
+input[type='password'] {
+    width: 100%;
+    background: #252525;
+    border-color: #03041c;
+    color: white;
+    border-radius: .5em;
+}
+.submit-btn {
+    text-transform: uppercase;
+    border-radius: 1em;
+    background-color: #03041c;
+    color: white;
+}
+
+.check-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.levers {
+    display: flex;
+    align-items: initial;
+    justify-content: initial;
+    width: 100%;
+    margin-bottom: 2em;
+}
+.levers > input {
+    width: 100%;
+    transform: rotate(270deg);
+}
+
+.launch-btn {
+    border-radius: 100%;
+    border-color: white;
+    padding: 1em .5em;
+    font-size: 1.5em;
+    background-color: #ff0030;
+    color: white;
+}
+
+.fly-to-top {
+    bottom: 120%;
+    left: 80%;
+    transition: all linear 1s;
+}
